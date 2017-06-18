@@ -86,12 +86,10 @@ void setup()
 void loop()
 {
   dis(); // measure distance
-  if (distance > 30) // if the distance is greater than 30 robot will go forward
+  if (distance > 20) // if the distance is greater than 20 robot will go forward
     goforward();
   else
   {
-    gobackward(); // it will go back for 0.1 sec
-    delay(100);
     stay(); // then it will stay there for 1 sec
     delay(1000);
     goleft(); // then it will turn left for 0.1 sec
