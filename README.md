@@ -11,3 +11,11 @@ It can perform more precisely than many robots even in a small place .
 # What it looks like
 
 ![Result](https://github.com/maifeeulasad/obstacle_avoiding_robot/blob/master/pics/result.jpg)
+
+
+# Result 
+
+[![Final Result](https://img.youtube.com/vi/Lzxz-XSpYek/0.jpg)](https://www.youtube.com/watch?v=Lzxz-XSpYek)
+
+# Making of the bot
+[![Making of the bot](https://img.youtube.com/vi/lanhDp3SmKM/0.jpg)](https://www.youtube.com/watch?v=lanhDp3SmKM)
