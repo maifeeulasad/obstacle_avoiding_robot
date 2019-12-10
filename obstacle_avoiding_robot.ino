@@ -73,8 +73,7 @@ void gobackward() // to go backward
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
 }
-void setup()
-{
+void setup() {
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
   pinMode(in3, OUTPUT);
@@ -83,13 +82,11 @@ void setup()
   pinMode(echo, INPUT);
   delay(2000); // it gives you extra 2 sec to after turning on robot
 }
-void loop()
-{
+void loop() {
   dis(); // measure distance
   if (distance > 20) // if the distance is greater than 20 robot will go forward
     goforward();
-  else
-  {
+  else {
     stay(); // then it will stay there for 1 sec
     delay(1000);
     goleft(); // then it will turn left for 0.1 sec
@@ -104,8 +101,7 @@ void loop()
     {
       goleft(); // why 20 cm ??
       delay(100); // for my chassis its safe  because if it is less than 20 cm  then it may  get an obstacle in it's path while turning
-    }
-    else if (distanceright - distanceleft > 20) // if free distance in right side is greater than free distance in left side by 20 cm then it will turn right for 0.1 sec
+    } else if (distanceright - distanceleft > 20) // if free distance in right side is greater than free distance in left side by 20 cm then it will turn right for 0.1 sec
     {
       goright(); // why 20 cm ??
       delay(100); // for my chassis its safe  because if it is less than 20 cm  then it may  get an obstacle in it's path while turning
